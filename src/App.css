@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.main-bread-wrapper {
+  height: 100vh;
+  width: 100%;
+  /* background: rgba(0, 0, 0, .5); */
+  background:url(https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/intro-1662064407.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-bread-wrapper h1 {
+  margin: 1rem;
+  padding: 1rem;
+  background:rgba(255, 255, 255, .7);
+}
+
+.bread-container {
+  width: 70%;
+  height: 40%;
+  background: rgba(0, 0, 0, .6);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-white {
+  color: aliceblue;
+}
+
+.salad-container {
+  height: 225px;
+  width: 225px;
+  border-radius: 30%;
+  background: rgba(64, 255, 0, 0.767);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cheese-container {
+  height: 225px;
+  width: 225px;
+  background: rgba(255, 225, 0, 0.896);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.patties-container {
+  height: 225px;
+  width: 225px;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.754);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px;
+}
+button{
+  padding: 8px 15px;
+  border: 1px solid #333;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.main-orders{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.order-container {
+  background: rgba(0, 0, 0, .3);
+  width: 50%;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.ingridient-container {
+  width: 100%;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.patties {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.salad {
+  height: 150px;
+  width: 150px;
+  border-radius: 30%;
+  background: rgba(0, 255, 55, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cheese {
+  height: 150px;
+  width: 150px;
+  background: rgba(255, 255, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-order{
+  padding-top: 15rem;
+  text-align: center;
+}
+
+.page-btns{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-btns button{
+  border: 1px solid  rgb(75, 75, 255);
+  background: transparent;
+  color: rgb(75, 75, 255);
+  font-weight: 600;
+  border-radius: 2.5px;
+  transition: all .3s ease-in-out;
+}
+.page-btns button:hover{
+  color: white;
+  background:rgb(75, 75, 255) ;
+}
+.search-wrapper{
+  margin-top:.5rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.searchBar{
+  padding: .5rem 1rem;
+  width: 60%;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #333;
+}
+.sort-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.selectInput{
+  font-size: 1.1rem;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  color: black;
+  border: 1px solid #333;
+  outline: none;
+}
+
+.cancel-btn{
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  font-weight: 600;
+  border-radius: 2.5px;
+  transition: all .3s ease-in-out;
+}
+.cancel-btn:hover{
+  background: red;
+  color: white;
+}
+
+.update-btn{
+  background: transparent;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  font-weight: 600;
+  border-radius: 2.5px;
+  transition: all .3s ease-in-out;
+}
+.update-btn:hover{
+  background: blueviolet;
+  color: white;
+}
+
+
+/* -------------------------------------- */
+
+nav {
+  background-color: #333;
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* ----------------------------------------------------------  */
+.table-wrapper{
+  width: 70%;
+  height:325px;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #333;
+  font-weight: 600;
+}
+
+thead {
+  background-color: #55555596;
+  color: black;
+}
+
+th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #555;
+  font-weight: 600;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+tr:nth-child(even){
+  background: #55555520;
+}
+
+td:last-child {
+  text-align: center;
+}
