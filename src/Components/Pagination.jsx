@@ -1,6 +1,8 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 
+import React from "react";
+
 const Pagination = ({ totalPages, currPage, prevPage, nextPage , firstPage , lastPage }) => {
   return (
     <div className="page-btns">
@@ -29,4 +31,4 @@ const Pagination = ({ totalPages, currPage, prevPage, nextPage , firstPage , las
   );
 };
 
-export default Pagination;
+export default React.memo(Pagination);

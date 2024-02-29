@@ -35,7 +35,7 @@ const Bread = () => {
 
   return (
     <div className="main-bread-wrapper">
-      <h1>Select Your Ingridients</h1>
+      <h1>Select Your Ingredients</h1>
       <div className="bread-container">
         <Patties
           orderIngredients={orderIngredients}
